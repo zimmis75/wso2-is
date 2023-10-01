@@ -46,8 +46,8 @@ RUN set -eux; \
             BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz'; \
             ;; \
        *) \
-            echo "Unsupported arch: ${ARCH}"; \
-            exit 1; \
+#            echo "Unsupported arch: ${ARCH}"; \
+#            exit 1; \
             ;; \
     esac; \
     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL}; \
